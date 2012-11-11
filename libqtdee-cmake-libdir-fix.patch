@@ -1,0 +1,37 @@
+diff -urN libqtdee-0.2.2.original//CMakeLists.txt libqtdee-0.2.2/CMakeLists.txt
+--- libqtdee-0.2.2.original//CMakeLists.txt	2011-03-15 16:42:07.000000000 +0000
++++ libqtdee-0.2.2/CMakeLists.txt	2011-05-18 10:51:13.102103121 +0100
+@@ -78,12 +78,18 @@
+     )
+ 
+ # Install
+-set(IMPORT_INSTALL_DIR lib/qt4/imports/dee)
++set(libdir CACHE PATH "libdir")
++set(QML_INSTALL_DIR ${libdir}/qt4/plugins/imports/dee)
+ set(INCLUDE_INSTALL_DIR include/QtDee)
+ 
++## pkgconfig file
++install(FILES libqtdee.pc
++    DESTINATION ${libdir}/pkgconfig
++    )
++
+ ## QtDee
+ install(TARGETS QtDee
+-    LIBRARY DESTINATION lib${LIB_SUFFIX}
++    LIBRARY DESTINATION ${libdir}
+     )
+ 
+ install(FILES deelistmodel.h
+@@ -92,10 +98,10 @@
+ 
+ ## QtDeeQml
+ install(TARGETS QtDeeQml
+-    LIBRARY DESTINATION ${IMPORT_INSTALL_DIR}
++    LIBRARY DESTINATION ${QML_INSTALL_DIR}
+     )
+ 
+ install(FILES qmldir
+-    DESTINATION ${IMPORT_INSTALL_DIR}
++    DESTINATION ${QML_INSTALL_DIR}
+     )
+ 

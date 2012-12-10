@@ -66,3 +66,14 @@ popd
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libqtdee.pc
 
+
+
+%changelog
+* Mon Jan 23 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.2.3-1
++ Revision: 767403
+- imported package libqtdee
+
+
+* Tue May 17 2011 nmo.marques@gmail.com
+- Initial package from 0.2.2:
+- Add libqtdee-cmake-libdir-fix.patch: fix library install path.

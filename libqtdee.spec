@@ -4,7 +4,7 @@
 
 Name:		libqtdee
 Version:	0.2.3
-Release:	1
+Release:	2
 License:	GPLv3
 Summary:	Qt bindings and QML plugin for Dee
 Url:		http://launchat.net/dee-qt

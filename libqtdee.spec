@@ -40,7 +40,7 @@ Simple Qt binding and QML plugin for Dee (https://launchpad.net/dee).
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 export BUILD_GLOBAL=true

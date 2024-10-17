@@ -7,7 +7,7 @@ Version:	0.2.3
 Release:	2
 License:	GPLv3
 Summary:	Qt bindings and QML plugin for Dee
-Url:		http://launchat.net/dee-qt
+Url:		https://launchat.net/dee-qt
 Group:		System/Libraries
 Source0:	%{name}-%{version}.tar.gz
 # PATCH-FIX-OPENSUSE - libqtdee-cmake-libdir-fix.patch nmarques@opensuse.org -- this is becoming epic.
